@@ -407,7 +407,7 @@ public class ValueWrapper extends BaseWrapper<Value> {
      * @return ContextWrapper
      */
     @Signature
-    public ContextWrapper getArcfraySize() {
+    public ContextWrapper getContext() {
         return new ContextWrapper(__env__, getWrappedObject().getContext());
     }
 
