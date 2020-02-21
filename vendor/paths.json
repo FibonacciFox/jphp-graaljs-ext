@@ -1,0 +1,14 @@
+{
+  "classPaths": {
+    "": [
+      "/jphp-runtime/jars/jphp-runtime-1.0.3.jar"
+    ],
+    "plugin": [
+      "/dn-bundle-plugin/src"
+    ]
+  },
+  "includes": [],
+  "plugins": [
+    "DevelNextBundle"
+  ]
+}

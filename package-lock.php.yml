@@ -1,0 +1,13 @@
+dependencies:
+  jphp-runtime:
+    version: 1.1.1
+    info:
+      sha256: ad811b0d638afec251b3d793b695f9385396abe82506ef9754773f9a8826ff0b
+      size: 1818577
+      repo: http://api.develnext.org
+  dn-bundle-plugin:
+    version: 1.0.2
+    info:
+      sha256: c45b70e9a4587301cc90e8083202693255958c17fe7307a22a4f63c7ec29fe62
+      size: 4307
+      repo: http://api.develnext.org

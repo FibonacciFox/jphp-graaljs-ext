@@ -1,0 +1,55 @@
+apply plugin: "java"
+apply plugin: "idea"
+apply plugin: "eclipse"
+
+version '1.0.0'
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+sourceSets {
+    main.java.srcDirs = ['src-jvm/main/java']
+    main.resources.srcDirs = ['src-jvm/main/resources']
+}
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+  jcenter()
+  maven { url 'https://oss.sonatype.org/content/groups/public' }
+  maven { url 'https://mvnrepository.com' }
+}
+
+configurations { provided }
+
+sourceSets { main { compileClasspath += configurations.provided } }
+
+dependencies {
+  provided files('jars/x-asm-7.1.jar')
+  provided files('jars/x-asm-analysis-7.1.jar')
+  provided files('jars/x-asm-commons-7.1.jar')
+  provided files('jars/x-asm-tree-7.1.jar')
+  provided files('jars/x-asm-util-7.1.jar')
+  provided files('jars/x-graal-sdk-19.3.1.jar')
+  provided files('jars/x-icu4j-64.2.jar')
+  provided files('jars/x-jphp-graaljs-ext-1.0.0.jar')
+  provided files('jars/x-js-19.3.1.jar')
+  provided files('jars/x-regex-19.3.1.jar')
+  provided files('jars/x-truffle-api-19.3.1.jar')
+  provided files('vendor/jphp-runtime/jars/jphp-runtime-1.0.3.jar')
+
+  compile 'org.graalvm.js:js:19.3.1'
+}
+
+jar {
+   destinationDir = file('jars/')
+   baseName = 'x-jphp-graaljs-ext'
+}
+
+task copyJars(type: Copy) {
+  from project.configurations.compile
+  into file(projectDir.path + '/jars/')
+  rename { name -> 'x-' + name }
+}
