@@ -11,6 +11,7 @@ import php.runtime.annotation.Reflection.Namespace;
 import php.runtime.annotation.Reflection.Signature;
 import php.runtime.env.Environment;
 import php.runtime.lang.BaseWrapper;
+import php.runtime.memory.ObjectMemory;
 import php.runtime.reflection.ClassEntity;
 
 @Name("Value")
@@ -632,8 +633,9 @@ public class ValueWrapper extends BaseWrapper<Value> {
      * @param value
      */
     @Signature
-    public void putMember(String identifier, Object value) {
-        getWrappedObject().putMember(identifier, value);
+    public void putMember(String identifier, ObjectMemory value) {
+        ClassMediator mediator = new ClassMediator(value);
+        getWrappedObject().putMember(identifier, mediator);
     }
 
     /**
