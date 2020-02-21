@@ -1,6 +1,8 @@
 package org.develnext.jphp.ext.graaljs.classes;
 
 import php.runtime.Memory;
+import php.runtime.env.Environment;
+
 import php.runtime.memory.ObjectMemory;
 
 public class ClassMediator {
@@ -34,5 +36,10 @@ public class ClassMediator {
 
     public void setValue(String name, long valueMemory) {
         this.objectMemory.value.setProp(name, valueMemory);
+    }
+
+    public Memory invoke(String name) throws Throwable {
+        Environment env = this.objectMemory.value.getEnvironment();
+        return env.invokeMethod(this.objectMemory, name);
     }
 }
