@@ -1,4 +1,4 @@
-#### **English** / [Русский](api-docs/README.ru.md)
+#### **English** / [Русский](README.ru.md)
 
 ---
 
