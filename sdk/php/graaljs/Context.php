@@ -2,7 +2,7 @@
 
 namespace php\graaljs;
 
-abstract class ContextWrapper
+abstract class Context
 {
-    
+
 }
