@@ -14,3 +14,7 @@ jppm add jphp-graaljs-ext@1.0.0
 
 ### API
 **Classes**
+
+#### `php\graaljs`
+
+- [`ContextWrapper`](https://github.com/FibonacciFox/jphp-graaljs-ext/tree/master/api-docsclasses/php/graaljs/ContextWrapper.md)
