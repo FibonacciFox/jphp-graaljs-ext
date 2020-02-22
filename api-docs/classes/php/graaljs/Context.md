@@ -3,24 +3,6 @@
 - **class** `Context` (`php\graaljs\Context`)
 - **source** `php/graaljs/Context.php`
 
-**Description**
-
-Краткое описание класса
-
-Подробное описание класса
-которое может растянуться на несколько строк с использованием HTML тегов.
-Теги можно использовать следующие:
-<b> — жирное начертание;
-<code> — код;
-<br> — разрыв строки;
-<i> — курсив;
-<kbd> — сочетание клавиш;
-<li> — элемент списка;
-<ol> — нумерованный список;
-<p> — абзац;
-<pre> — форматированный текст;
-<samp> — пример;
-
 ---
 
 #### Methods
@@ -34,5 +16,5 @@
 
 ### __construct()
 ```php
-__construct(string $permittedLanguages): Context
+__construct(array $permittedLanguages): Context
 ```
