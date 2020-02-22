@@ -15,6 +15,7 @@ public class ClassMediator {
 
     public Memory getValue(String nameValue) {
 
+        
         return this.objectMemory.value.getProp(nameValue);
     }
 

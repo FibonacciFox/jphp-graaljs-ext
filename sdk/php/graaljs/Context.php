@@ -40,7 +40,7 @@ abstract class Context
      * @param array $permittedLanguages
      * @return Builder
      */
-    public function newBuilder(array $permittedLanguages = null)
+    public function newBuilder(array $permittedLanguages = [])
     {
     }
 
