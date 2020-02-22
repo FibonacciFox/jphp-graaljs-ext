@@ -1,4 +1,4 @@
 # Engine
 
-- **class** `Engine` (`php\graaljs\Engine`)
+- **class** `Engine` (`graaljs\Engine`)
 - **source** `php/graaljs/Engine.php`

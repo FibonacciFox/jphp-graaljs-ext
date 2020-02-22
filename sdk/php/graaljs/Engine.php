@@ -1,6 +1,6 @@
 <?php
 
-namespace php\graaljs;
+namespace graaljs;
 
 abstract class Engine
 {

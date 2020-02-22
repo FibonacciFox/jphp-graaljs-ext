@@ -1,7 +1,6 @@
 <?php
 
-namespace php\graaljs;
-
+namespace graaljs;
 
 abstract class Context
 {
@@ -131,5 +130,5 @@ abstract class Context
     {
     }
 
-    
+
 }

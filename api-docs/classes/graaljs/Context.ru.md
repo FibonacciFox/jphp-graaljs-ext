@@ -1,11 +1,11 @@
 # Context
 
-- **class** `Context` (`php\graaljs\Context`)
-- **source** `php/graaljs/Context.php`
+- **класс** `Context` (`graaljs\Context`)
+- **исходники** `php/graaljs/Context.php`
 
 ---
 
-#### Methods
+#### Методы
 
 - `->`[`__construct()`](#method-__construct)
 - `->`[`create()`](#method-create) - _Creates a context with default configuration._
@@ -18,9 +18,10 @@
 - `->`[`getBindings()`](#method-getbindings) - _Returns a value that represents the top-most bindings of a language._
 - `->`[`getEngine()`](#method-getengine) - _Provides access to meta-data about the underlying Graal engine._
 - `->`[`getPolyglotBindings()`](#method-getpolyglotbindings) - _Returns polyglot bindings that may be used to exchange symbols between the_
+- `->`[`hashCode()`](#method-hashcode)
 
 ---
-# Methods
+# Методы
 
 <a name="method-__construct"></a>
 
@@ -134,3 +135,12 @@ getPolyglotBindings(): Value
 Returns polyglot bindings that may be used to exchange symbols between the
 host and guest languages. All languages have unrestricted access to the
 polyglot bindings.
+
+---
+
+<a name="method-hashcode"></a>
+
+### hashCode()
+```php
+hashCode(): int
+```
