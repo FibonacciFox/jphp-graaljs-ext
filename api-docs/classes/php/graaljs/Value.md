@@ -1,4 +1,4 @@
 # Value
 
-- **class** `Value` (`graaljs\Value`)
+- **class** `Value` (`php\graaljs\Value`)
 - **source** `php/graaljs/Value.php`
