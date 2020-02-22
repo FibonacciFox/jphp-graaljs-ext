@@ -2,7 +2,6 @@ package org.fibonaccifox.graaljs.classes;
 
 import php.runtime.Memory;
 import php.runtime.env.Environment;
-
 import php.runtime.memory.ObjectMemory;
 
 public class ClassMediator {
@@ -15,7 +14,6 @@ public class ClassMediator {
 
     public Memory getValue(String nameValue) {
 
-        
         return this.objectMemory.value.getProp(nameValue);
     }
 

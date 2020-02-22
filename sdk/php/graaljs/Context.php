@@ -123,4 +123,13 @@ abstract class Context
     public function getPolyglotBindings()
     {
     }
+
+    /**
+     * @return int
+     */
+    public function hashCode()
+    {
+    }
+
+    
 }
