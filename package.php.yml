@@ -19,12 +19,22 @@ gradle:
   deps:
   - "org.graalvm.js:js:19.3.1"
   
-
+config:
+  ignore:
+    - /.idea/**
+    - /.vscode/**
+    - /.gradle/**
+    - /*.iml
+    - /.git/**
+    - /examples/**
+    - /gradle/**
+    - /build/**
+    - /package.hub.yml
  
 
 
-doc:
-  url-prefix: 
+doc: 
+  url-prefix: https://github.com/FibonacciFox/jphp-graaljs-ext/tree/master/api-docs/
   langs:
     en: English
     ru: Русский
