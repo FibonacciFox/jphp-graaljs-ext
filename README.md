@@ -25,10 +25,10 @@ jppm add jphp-graaljs-ext@1.0.0
 Class ExtClass {
     
     $id = 123;
-    $text = 'ddd';
+    $text = 'Hello Jphp';
     
     public function test(){
-        return "ddd";
+        return "jphp string";
     }
 }
 ```
