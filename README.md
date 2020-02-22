@@ -42,6 +42,6 @@ $newContext->getBindings("js")->putMember("ExtClass", new ExtClass());
 $newContext->eval("js","print(ExtClass.getValue('id'));");
 $newContext->eval("js","ExtClass.setValue('id', 1000);");
 $newContext->eval("js","print(ExtClass.getValue('id'));");
-$newContext->eval("js","let func = TestClass.invoke('id1'); print(test);");
+$newContext->eval("js","let func = TestClass.invoke('test'); print(func);");
 ?>
 ```
