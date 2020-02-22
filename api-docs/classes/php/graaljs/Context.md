@@ -1,6 +1,6 @@
 # Context
 
-- **class** `Context` (`graaljs\Context`)
+- **class** `Context` (`php\graaljs\Context`)
 - **source** `php/graaljs/Context.php`
 
 ---
@@ -133,10 +133,4 @@ getPolyglotBindings(): Value
 ```
 Returns polyglot bindings that may be used to exchange symbols between the
 host and guest languages. All languages have unrestricted access to the
-polyglot bindings. The returned bindings object always has members and its
-members are readable, writable and removable.
-
-Guest languages may put and get members through language specific APIs. For
-example, in JavaScript, symbols of the polyglot bindings can be accessed
-using Polyglot.import("name") and set using Polyglot.export("name", value).
-Please see the individual language reference on how to access these symbols.
+polyglot bindings.
