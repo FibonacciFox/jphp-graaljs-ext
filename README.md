@@ -24,7 +24,7 @@ jppm add jphp-graaljs-ext@1.0.0
 ```php
 Class ExtClass {
     
-    $num = 123;
+    $id = 123;
     $text = 'ddd';
     
     public function test(){
