@@ -2,3 +2,8 @@
 package.hub.yml
 
 .gradle/
+vendor/
+jars/
+./vscode
+build/
+bin/

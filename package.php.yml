@@ -29,6 +29,8 @@ config:
     - /examples/**
     - /gradle/**
     - /build/**
+    - /jars/**
+     - /build/**
     - /package.hub.yml
  
 
