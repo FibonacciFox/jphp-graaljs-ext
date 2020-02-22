@@ -16,5 +16,5 @@
 
 ### __construct()
 ```php
-__construct(string $permittedLanguages): php\graaljs\Context
+__construct(string $permittedLanguages): Context
 ```

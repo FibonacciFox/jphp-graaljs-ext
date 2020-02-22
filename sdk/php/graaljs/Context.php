@@ -4,6 +4,12 @@ namespace php\graaljs;
 
 abstract class Context
 {
-    public function __construct(string $permittedLanguages = null):Context {}
-
+    /**
+     * @param string $permittedLanguages
+     * 
+     * @return Context
+     */
+    public function __construct(string $permittedLanguages = null)
+    {
+    }
 }
