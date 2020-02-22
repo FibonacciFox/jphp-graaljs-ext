@@ -20,3 +20,18 @@ jppm add jphp-graaljs-ext@1.0.0
 - [`Builder`](https://github.com/FibonacciFox/jphp-graaljs-ext/tree/master/api-docs/classes/php/graaljs/Builder.md)
 - [`Context`](https://github.com/FibonacciFox/jphp-graaljs-ext/tree/master/api-docs/classes/php/graaljs/Context.md)
 - [`Engine`](https://github.com/FibonacciFox/jphp-graaljs-ext/tree/master/api-docs/classes/php/graaljs/Engine.md)
+
+```php
+<?php
+Class ExtClass {
+
+    $num = 123;
+    $text = 'ddd';
+    
+    
+    public function test(){
+        return "ddd";
+    }
+}
+?>
+```
