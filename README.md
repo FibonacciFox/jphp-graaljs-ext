@@ -37,11 +37,11 @@ Class ExtClass {
 ```php
 <?php
 $Context = new Context();
-$newContext = $Context->newBuilder([])->allowAllAccess(true)->build();
-$newContext->getBindings("js")->putMember("ExtClass", new ExtClass());    
-$newContext->eval("js","print(ExtClass.getValue('id'));");
-$newContext->eval("js","ExtClass.setValue('id', 1000);");
-$newContext->eval("js","print(ExtClass.getValue('id'));");
-$newContext->eval("js","let func = TestClass.invoke('test'); print(func);");
+    $newContext = $Context->newBuilder([])->allowAllAccess(true)->build();
+    $newContext->getBindings("js")->putMember("ExtClass", new ExtClass());    
+    $newContext->eval("js","print(ExtClass.getValue('id'));");
+    $newContext->eval("js","ExtClass.setValue('id', 1000);");
+    $newContext->eval("js","print(ExtClass.getValue('id'));");
+    $newContext->eval("js","let func = ExtClass.invoke('test'); print(func);");
 ?>
 ```
