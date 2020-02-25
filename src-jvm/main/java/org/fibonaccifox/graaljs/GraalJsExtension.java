@@ -18,7 +18,7 @@ import php.runtime.ext.support.Extension;
 
 public class GraalJsExtension extends Extension {
 
-    public static final String NS = "graaljs";
+    public static final String NS = "php\\graaljs";
 
     @Override
     public Status getStatus() {
